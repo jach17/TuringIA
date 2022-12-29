@@ -8,11 +8,12 @@
 
 :root {
   --main-bg-color: #563444;
+  --main-bg-hover-color: #6a5e72;
 }
 .section_header {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,15 +32,41 @@
   font-weight: bold;
 }
 .on_middle_screen {
-  margin-top: 2.5em;
+  margin-top: 5em;
 }
 .btn_turing {
   color: white;
   background-color: var(--main-bg-color);
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 0.2em;
-  padding: 0.5em 1em;
+  letter-spacing: 0.1em;
+  padding: 0.8em 1.8em;
   border-radius: 0.8em;
+  transform: 0.5s;
+  transition-property: background;
+}
+
+.btn_turing:hover {
+  background: var(--main-bg-hover-color);
+  color: white;
+  text-decoration: none;
+}
+
+.section_que_realizamos {
+  margin: 4.5em;
+}
+.text_color_different {
+  color: var(--main-bg-color);
+}
+.ideal {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  background: url(/images/ManeraIdealBackground.png);
+  background-size: cover;
+  background-position: center;
 }
