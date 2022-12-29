@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+:root {
+  --main-bg-color: #563444;
+}
+.section_header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  background: url(/images/HeaderBackground.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text_bigger {
+  font-size: 4.3em;
+  font-weight: bold;
+}
+.text_normal {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.on_middle_screen {
+  margin-top: 2.5em;
+}
+.btn_turing {
+  color: white;
+  background-color: var(--main-bg-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding: 0.5em 1em;
+  border-radius: 0.8em;
+}
