@@ -102,3 +102,12 @@
 .section_contactanos {
   min-height: 70vh;
 }
+
+footer {
+  background-color: var(--main-bg-hover-color);
+  height: 40vh;
+}
+#subscribeNewsletter {
+  background-color: aqua;
+  padding: 5px;
+}
