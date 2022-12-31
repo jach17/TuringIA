@@ -37,25 +37,37 @@
           >
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
               <li class="nav-item active">
-                <a class="nav-link text-white" href="#">Inicio </a>
+                <a class="item_color_nav nav-link text-white" href="#"
+                  >Inicio
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Nosotros</a>
+                <a class="item_color_nav nav-link text-white" href="#"
+                  >Nosotros</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Servicios</a>
+                <a class="item_color_nav nav-link text-white" href="#"
+                  >Servicios</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Tableau</a>
+                <a class="item_color_nav nav-link text-white" href="#"
+                  >Tableau</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Portal</a>
+                <a class="item_color_nav nav-link text-white" href="#"
+                  >Portal</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Blog</a>
+                <a class="item_color_nav nav-link text-white" href="#">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contacto</a>
+                <a class="item_color_nav nav-link text-white" href="#"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -266,7 +278,7 @@
         Historias de <span class="text_color_different">nuestros clientes</span>
       </h2>
       <div class="container">
-        <div class="row">
+        <div class="clients_container row">
           <div class="card m-3" style="width: 12rem">
             <div class="card-body">
               <img src="./images/card_morgan.png" width="100%" alt="" />
@@ -309,6 +321,9 @@
           ></iframe>
         </div>
         <div class="col-md-4">
+          <span
+            ><b>Dejanos tus datos y nos pondremos en contacto contigo</b></span
+          >
           <form>
             <div class="form-group">
               <input
@@ -362,7 +377,13 @@
                 placeholder="Escriba su mensaje aquí"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button
+              type="submit"
+              class="btn btn-primary m-2"
+              style="background: var(--main-bg-color)"
+            >
+              Enviar
+            </button>
           </form>
         </div>
       </div>
@@ -371,7 +392,7 @@
 
   <footer>
     <div class="conatiner row text-white">
-      <div class="container col-md-4 pt-5">
+      <div class="container col-sm-12 col-md-4 pt-5">
         <h4>Turing Inteligencia Artificial</h4>
         <span style="text-align: end">
           Av. Insurgentes 601 Col. Nápoles, Benito Juárez Ciudad de México,
@@ -379,7 +400,7 @@
         >
       </div>
 
-      <div class="col-md-4 text-center mt-3">
+      <div class="col-sm-12 col-md-4 text-center mt-3">
         <h4>Puedes encontrarnos en</h4>
         <div class="icons">
           <a href=""><img src="./images/ic_fb.png" alt="" /></a>
@@ -389,7 +410,7 @@
         </div>
       </div>
 
-      <div class="container col-md-4 pt-5">
+      <div class="container col-sm-12 col-md-4 pt-5">
         <h4>Inscribete a nuestro newsletter</h4>
         <div class="custom-file">
           <input type="text" id="emailSubscribe" placeholder="Email" />
