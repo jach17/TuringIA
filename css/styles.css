@@ -128,6 +128,48 @@ footer {
   }
 }
 
+@media (min-width: 401px) and (max-width: 767px) {
+  .tech_responsive {
+    width: 50%;
+  }
+  footer {
+    padding: 2.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  footer {
+    padding: 2.5em;
+  }
+  .carousel_tech_images {
+    display: flex;
+    flex-direction: row;
+  }
+  .section_que_realizamos {
+    margin: 2em 0px 0px 0px;
+  }
+  #services_ul li {
+    list-style: none;
+    margin-left: auto;
+  }
+  .card-title {
+    font-size: 90%;
+  }
+  .card-text {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 960px) {
+  .carousel_tech_images {
+    display: flex;
+    flex-direction: row;
+  }
+  .carousel_tech_images .card-body img {
+    width: 100%;
+  }
+}
+/* agregar al display flex del el card deck un column direction
+}
 /*
 
 
