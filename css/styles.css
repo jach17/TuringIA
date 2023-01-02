@@ -113,6 +113,18 @@ footer {
 /*RESPONSIVE*/
 
 @media (max-width: 400px) {
+  .btn_turing {
+    font-size: 70%;
+  }
+  .card-deck {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-deck .card {
+    width: 13rem !important;
+  }
+
   .item_color_nav {
     color: black !important;
   }
@@ -129,6 +141,10 @@ footer {
 }
 
 @media (min-width: 401px) and (max-width: 767px) {
+  .card-deck {
+    display: flex;
+    flex-direction: column;
+  }
   .tech_responsive {
     width: 50%;
   }
