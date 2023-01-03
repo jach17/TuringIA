@@ -50,7 +50,7 @@ const subscribeToNewsletter = () => {
   let email_client = document.getElementById("emailSubscribe").value;
   if (email_client.length != 0) {
     fetch(
-      "https://turingiabackend-production.up.railway.app/api/turing_back/test/db/newsletter",
+      "https://turingiabackend-production.up.railway.app/api/turing_back/landing/add/newsletter",
       {
         method: "POST",
         headers: {
