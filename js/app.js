@@ -44,3 +44,25 @@ const setOfferView = (type) => {
     }
   }
 };
+
+const btnSubscribe = document.getElementById("subscribeNewsLetter");
+const subscribeToNewsletter = () => {
+  let email_client = document.getElementById("emailSubscribe").value;
+  if (email_client.length != 0) {
+    fetch(
+      "https://turingiabackend-production.up.railway.app/api/turing_back/test/db/newsletter",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: email_client }),
+      }
+    )
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+  } else {
+    alert("Ingrese un email");
+  }
+};

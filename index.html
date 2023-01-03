@@ -335,11 +335,15 @@
           <span
             ><b>Dejanos tus datos y nos pondremos en contacto contigo</b></span
           >
-          <form>
+          <form
+            method="post"
+            action="https://turingiabackend-production.up.railway.app/api/turing_back/test/db/ping"
+          >
             <div class="form-group">
               <input
                 type="text"
                 class="form-control"
+                name="nombre"
                 id="name"
                 placeholder="Nombre"
               />
@@ -349,6 +353,7 @@
               <input
                 type="email"
                 class="form-control"
+                name="email"
                 id="email"
                 placeholder="Email"
               />
@@ -357,6 +362,7 @@
               <input
                 type="text"
                 class="form-control"
+                name="phone"
                 id="phone"
                 placeholder="Numero de teléfono"
               />
@@ -365,6 +371,7 @@
               <input
                 type="text"
                 class="form-control"
+                name="puesto"
                 id="job"
                 placeholder="Puesto"
               />
@@ -373,6 +380,7 @@
               <input
                 type="text"
                 class="form-control"
+                name="empresa"
                 id="company"
                 placeholder="Empresa"
               />
@@ -381,6 +389,7 @@
               <textarea
                 type="text"
                 class="form-control"
+                name="mensaje"
                 id="description"
                 rows="4"
                 maxlength="100"
@@ -425,7 +434,10 @@
         <h4>Inscribete a nuestro newsletter</h4>
         <div class="custom-file">
           <input type="text" id="emailSubscribe" placeholder="Email" />
-          <label id="subscribeNewsLetter" data-browse="Suscribir"
+          <label
+            id="subscribeNewsLetter"
+            onclick="subscribeToNewsletter()"
+            data-browse="Suscribir"
             >Suscribir</label
           >
         </div>

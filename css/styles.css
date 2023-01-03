@@ -105,9 +105,15 @@ footer {
   background-color: var(--main-bg-hover-color);
   min-height: 40vh;
 }
-#subscribeNewsletter {
-  background-color: aqua;
+#subscribeNewsLetter {
   padding: 5px;
+  cursor: pointer;
+}
+#subscribeNewsLetter:hover {
+  padding: 5px;
+  cursor: pointer;
+  font-size: 110%;
+  font-weight: bold;
 }
 
 /*RESPONSIVE*/
