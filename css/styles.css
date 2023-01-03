@@ -10,6 +10,9 @@
   --main-bg-color: #563444;
   --main-bg-hover-color: #6a5e72;
 }
+#ul_nav_header li a:hover {
+  font-size: 115%;
+}
 .section_header {
   position: relative;
   width: 100%;

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <section class="section_header">
+  <section id="sectionHeader" class="section_header">
     <header>
       <!-- Nav bar starts-->
       <nav class="navbar navbar-expand-lg">
@@ -35,19 +35,25 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <ul id="ul_nav_header" class="navbar-nav ml-auto mb-2 mb-lg-0">
               <li class="nav-item active">
-                <a class="item_color_nav nav-link text-white" href="#"
+                <a
+                  class="item_color_nav nav-link text-white"
+                  href="sectionHeader"
                   >Inicio
                 </a>
               </li>
               <li class="nav-item">
-                <a class="item_color_nav nav-link text-white" href="#"
+                <a
+                  class="item_color_nav nav-link text-white"
+                  href="sectionQueRealizamos"
                   >Nosotros</a
                 >
               </li>
               <li class="nav-item">
-                <a class="item_color_nav nav-link text-white" href="#"
+                <a
+                  class="item_color_nav nav-link text-white"
+                  href="sectionQueOfrecemos"
                   >Servicios</a
                 >
               </li>
@@ -65,7 +71,9 @@
                 <a class="item_color_nav nav-link text-white" href="#">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="item_color_nav nav-link text-white" href="#"
+                <a
+                  class="item_color_nav nav-link text-white"
+                  href="sectionContacto"
                   >Contacto</a
                 >
               </li>
@@ -89,7 +97,7 @@
     </header>
   </section>
 
-  <section class="section_que_realizamos">
+  <section id="sectionQueRealizamos" class="section_que_realizamos">
     <div class="container">
       <div class="row">
         <div class="header">
@@ -188,22 +196,34 @@
         </div>
         <div class="card-deck carousel_tech_images">
           <div class="card-body col-md-3">
-            <img style="width: 70%" src="./images/tech_tableau.png" alt="" />
+            <img
+              style="width: 70%"
+              src="./images/tech_tableau.png"
+              alt="Tableau"
+            />
           </div>
           <div class="card-body col-md-3">
-            <img style="width: 70%" src="./images/tech_pmi.png" alt="" />
+            <img style="width: 70%" src="./images/tech_pmi.png" alt="PMI" />
           </div>
           <div class="card-body col-md-3">
-            <img style="width: 70%" src="./images/tech_salesforce.png" alt="" />
+            <img
+              style="width: 70%"
+              src="./images/tech_salesforce.png"
+              alt="Salesforce"
+            />
           </div>
           <div class="card-body col-md-3">
-            <img style="width: 70%" src="./images/tech_salesfor.png" alt="" />
+            <img
+              style="width: 70%"
+              src="./images/tech_salesfor.png"
+              alt="Scrum"
+            />
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section_que_ofrecemos">
+  <section id="sectionQueOfrecemos" class="section_que_ofrecemos">
     <div class="row">
       <div class="row col-md-4 justify-content-end">
         <h2 class="text_normal">¿Qué ofrecemos?</h2>
@@ -273,7 +293,7 @@
         <div class="clients_container justify-content-center row">
           <div class="card m-3" style="width: 12rem">
             <div class="card-body">
-              <img src="./images/card_morgan.png" width="100%" alt="" />
+              <img src="./images/card_morgan.png" width="100%" alt="Morgan" />
               <p class="card-text m-2">
                 JPMorgan Chase elige Tableau para ofrecer análisis de
                 autoservicio y seguir el vertiginoso ritmo de los cambios en el
@@ -283,7 +303,7 @@
           </div>
           <div class="card m-3" style="width: 12rem">
             <div class="card-body">
-              <img src="./images/card_redhat.jpg" width="100%" alt="" />
+              <img src="./images/card_redhat.jpg" width="100%" alt="Redhat" />
               <p class="card-text m-2">
                 Red Hat adopta el Blueprint de Tableau y Tableau Online, y
                 profundiza en la cultura de datos con más de 4500 empleados en
@@ -293,7 +313,7 @@
           </div>
           <div class="card m-3" style="width: 12rem">
             <div class="card-body">
-              <img src="./images/card_verzon.jpg" width="100%" alt="" />
+              <img src="./images/card_verzon.jpg" width="100%" alt="Verzon" />
               <p class="card-text m-2">
                 Verizon usa Tableau para reducir las llamadas de soporte en un
                 43 % y así mejorar la experiencia del cliente
@@ -302,7 +322,7 @@
           </div>
           <div class="card m-3" style="width: 12rem">
             <div class="card-body">
-              <img src="./images/card_tableau.png" width="100%" alt="" />
+              <img src="./images/card_tableau.png" width="100%" alt="Tableau" />
               <p class="card-text m-2">
                 JPMorgan Chase elige Tableau para ofrecer análisis de
                 autoservicio y seguir el vertiginoso ritmo de los cambios en el
@@ -315,7 +335,7 @@
     </div>
   </section>
 
-  <section class="section_contactanos">
+  <section id="sectionContacto" class="section_contactanos">
     <div class="container">
       <h2 class="text_normal" style="text-align: end">Contactanos</h2>
 
@@ -341,6 +361,7 @@
           >
             <div class="form-group">
               <input
+                required
                 type="text"
                 class="form-control"
                 name="nombre"
@@ -351,6 +372,7 @@
 
             <div class="form-group">
               <input
+                required
                 type="email"
                 class="form-control"
                 name="email"
@@ -360,6 +382,7 @@
             </div>
             <div class="form-group">
               <input
+                required
                 type="text"
                 class="form-control"
                 name="phone"
@@ -369,6 +392,7 @@
             </div>
             <div class="form-group">
               <input
+                required
                 type="text"
                 class="form-control"
                 name="puesto"
@@ -378,6 +402,7 @@
             </div>
             <div class="form-group">
               <input
+                required
                 type="text"
                 class="form-control"
                 name="empresa"
@@ -387,6 +412,7 @@
             </div>
             <div class="form-group">
               <textarea
+                required
                 type="text"
                 class="form-control"
                 name="mensaje"
@@ -423,10 +449,10 @@
       <div class="col-sm-12 col-md-4 text-center mt-3">
         <h4>Puedes encontrarnos en</h4>
         <div class="icons">
-          <a href=""><img src="./images/ic_fb.png" alt="" /></a>
-          <a href=""><img src="./images/ic_tw.png" alt="" /></a>
-          <a href=""><img src="./images/ic_ig.png" alt="" /></a>
-          <a href=""><img src="./images/ic_ln.png" alt="" /></a>
+          <a href=""><img src="./images/ic_fb.png" alt="Facebook" /></a>
+          <a href=""><img src="./images/ic_tw.png" alt="Twitter" /></a>
+          <a href=""><img src="./images/ic_ig.png" alt="Instagram" /></a>
+          <a href=""><img src="./images/ic_ln.png" alt="LinkedIn" /></a>
         </div>
       </div>
 

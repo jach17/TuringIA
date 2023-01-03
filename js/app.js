@@ -61,7 +61,7 @@ const subscribeToNewsletter = () => {
       }
     )
       .then((res) => res.json())
-      .then((res) => console.log(res));
+      .then((res) => alert("Suscrito"));
   } else {
     alert("Ingrese un email");
   }
